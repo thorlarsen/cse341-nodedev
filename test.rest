@@ -10,4 +10,4 @@ GET https://still-lowlands-88073.herokuapp.com/contacts
 
 ###
 
-https://still-lowlands-88073.herokuapp.com/contacts/626c8981304b90ec6e07f986
+GET https://still-lowlands-88073.herokuapp.com/contacts/626c8981304b90ec6e07f986
