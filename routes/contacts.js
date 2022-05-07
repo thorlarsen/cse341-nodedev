@@ -81,6 +81,19 @@ routes.put('/:id', (req, res) => {
 });
 
 //Delete a contact by ID passed in URL
+routes.delete('/:id', (req, res) => {
+    contactId = new ObjectId(req.params.id);
+    connect.getCollection().deleteOne(
+        { _id: contactId }
+    )
+    .then(result => {console.log(result);
+        res.status(202).json(); 
+    })
+    .catch(error => {
+        console.log(error);
+        res.status(500).json();
+    })
+})
 
 module.exports = routes;
 
