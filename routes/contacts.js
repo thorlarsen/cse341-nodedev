@@ -45,12 +45,11 @@ routes.post('/', (req, res) => {
       connect.getCollection().insertOne(contact)
           .then(result => {
               console.log(result);
+              res.status(201).json(`new ObjectId: ${result.insertedId}`);
           })
-          .then(res.status(201).json())
           .catch(error => {
               console.log(error);
               res.status(500).json();
-              console.log(error);
           });
 });
 
