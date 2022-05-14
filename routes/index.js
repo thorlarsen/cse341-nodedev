@@ -2,6 +2,6 @@ const routes = require('express').Router();
 
 routes.use('/', require('./home'));
 routes.use('/contacts', require('./contacts'));
-routes.use('/swagger', require('./swagger'));
+routes.use('/api-docs', require('./swagger'));
 
 module.exports = routes;
