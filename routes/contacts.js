@@ -1,5 +1,4 @@
 //All the routes for working with the contacts DB
-//Week 1 and 2
 
 const routes = require('express').Router();
 const connect = require('../db/connect');
