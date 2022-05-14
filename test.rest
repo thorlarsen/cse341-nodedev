@@ -42,19 +42,15 @@ Content-Type: application/json
 DELETE http://localhost:3000/contacts/6275d77e9833c8907e938639
 
 //Heroku tests
-###
+### Get all contacts
 
 GET https://still-lowlands-88073.herokuapp.com/contacts
 
-### Redirect also work for GET contacts
-
-GET https://still-lowlands-88073.herokuapp.com/
-
-###
+### Get one contact
 
 GET https://still-lowlands-88073.herokuapp.com/contacts/626c8981304b90ec6e07f986
 
-###
+### Create a new contact
 
 POST https://still-lowlands-88073.herokuapp.com/contacts HTTP/1.1 
 content-type: application/json
@@ -72,7 +68,7 @@ PUT https://still-lowlands-88073.herokuapp.com/contacts/6275d6c319f24c568763c1e0
 Content-Type: application/json
 
 {
-    "firstName": "Replace 3rd",
+    "firstName": "Replace A",
     "lastName": "Contact",
     "email": "test@replace.com",
     "favoriteColor": "black",
