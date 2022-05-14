@@ -1,3 +1,6 @@
+// Default router file.
+// All routes are directed through here
+
 const routes = require('express').Router();
 
 routes.use('/', require('./home'));

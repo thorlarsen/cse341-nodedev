@@ -1,3 +1,5 @@
+//swagger-autogen file
+
 const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
